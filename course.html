@@ -1,0 +1,1278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Top Technical Courses – Feather Academy</title>
+  <meta name="description" content="Feather Academy provides Top Technical courses in Nagercoil for Freshers. Students can join our Internship programs for career growth.">
+  
+  <!-- favicon -->
+  <!-- <link rel="icon" type="favicon" href="images/favicon.png"> -->
+  <link rel="icon" type="image/x-icon" href="images/favicon.png">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+  <link href="css/header-and-footer-styles.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/design.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-white px-3 shadow p-3 sticky-top">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+            <img src="images/feathersoftwareslogo.webp" alt="Feather Logo" />
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+            aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end align-items-center" id="navMenu">
+            <ul class="navbar-nav align-items-center mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="index.html">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="neet.html">NEET</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="jee.html">JEE</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="course.html">COURSES</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="hr-solution.html">HR SOLUTIONS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">CONTACT</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+  <!-- ! Marquee -->
+  <div class="marquee-bg">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 mt-3">
+          <marquee onmouseover="this.stop()" onmouseout="this.start()">Welcome to <b>Feather Academy</b>. Feather Softwares provides <b>Internship Programs</b> for Freshers. <b>Join Now!</b> </marquee>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- ! Banner -->
+  <div class="coursepart" id="enrollform">
+    <div class="coursepart-overlay pt-2 pb-2">
+      <div class="container">
+        <div class="row p-2">
+          <div class="col-lg-6 mt-4 d-flex justify-content-center align-items-center px-lg-5">
+            <div>
+              <div class="coursehead">
+                <h1>Code Your Dreams into Digital Reality</h1>
+              </div>
+              <p>Feather Academy equips students with the essential IT skills they require to succeed in their dream careers. As one of the leading software companies in Kanyakumari district, we offer engaging, interactive classes that empower individuals to effectively apply their knowledge.</p>
+            </div>
+          </div>
+          <div class="col-lg-6 mt-4 mb-4 p-2 px-4">
+            <form id="featherCourseForm">
+              <input type="hidden" name="form_type" value="course_contact">
+              <div class="row mt-3">
+                <div class="col-lg-6">
+                  <div class="form-group mb-3">
+                    <label for="courseContactName" class="blog-label text-white">Name <span class="req">*</span></label>
+                    <input type="text" id="courseContactName" name="courseContactName" class="blog-title-input" autocomplete="off" required="">
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="form-group mb-3">
+                    <label for="courseContactNumber" class="blog-label text-white">Phone Number <span class="req">*</span></label>
+                    <input type="number" id="courseContactNumber" name="courseContactNumber" class="blog-title-input" autocomplete="off" required="" pattern="\d{10}" title="must be exactly 10 digits">
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="form-group mb-3">
+                    <label for="courseContactPlace" class="blog-label text-white">Place <span class="req">*</span></label>
+                    <input type="text" id="courseContactPlace" name="courseContactPlace" class="blog-title-input" autocomplete="off" required="">
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="form-group mb-3">
+                    <label for="courseContactQualification" class="blog-label text-white">Qualification <span class="req">*</span></label>
+                    <input type="text" class="blog-title-input" name="courseContactQualification" id="courseContactQualification" autocomplete="off" required="">
+                  </div>
+                </div>
+                <div class="col-lg-12 mt-3">
+                  <div class="form-group mb-3">
+                    <select id="courseContactCollege" name="courseContactCollege" class="blog-title-input" required="">
+                      <option value="">Select Current Status</option>
+                      <option value="Student">Student</option>
+                      <option value="Working professional">Working professional</option>
+                      <option value="Job Seeker">Job Seeker</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-lg-12 mt-3">
+                  <div class="form-group mb-3">
+                    <select id="selectedCourse" name="selectedCourse" class="blog-title-input" required="">
+                      <option value="">Select Course</option>
+                      <option value="Front End Development">Front End Development</option>
+                      <option value="PHP Full Stack Development">PHP Full Stack Development</option>
+                      <option value="MERN Stack Development">MERN Stack Development</option>
+                      <option value="Python Full Stack Development">Python Full Stack Development</option>
+                      <option value="Java Full Stack Development">Java Full Stack Development</option>
+                      <option value="Graphic Design">Graphic Design</option>
+                      <option value="UI/UX">UI/UX</option>
+                      <option value="Data Science">Data Science</option>
+                      <option value="Digital Marketing">Digital Marketing</option>
+                      <option value="Video Editing">Video Editing</option>
+                      <option value="Mobile App Development">Mobile App Development</option>
+                      <option value="Other Courses">Other Courses</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-center mt-3 mb-3">
+                  <button type="submit" class="blog-submit-btn">Enroll Now</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ! Top Technical Courses -->
+  <div class="container mt-5">
+    <div class="coursehead">
+      <p class="text-center">Sharpen Your Expertise</p>
+      <h2 class="text-center pb-4">Top Technical Courses</h2>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <p style="text-align: justify;">
+          Feather Academy provides top technical courses in Kanyakumari district for individuals who want to pursue careers they are passionate about. Our expert lecturers offer students with the skills and knowledge necessary to excel in challenging careers in web development, data science, and other technical sectors. In addition, we engage students in collaborative sessions and offer a practical learning approach to make certain they master in-demand practical skills.
+        </p>
+        <p style="text-align: justify;">
+          We also provide internship courses and offer a chance for students to learn from our specialized experts. Through these programs, they can attain hands-on experience and prepare for the tasks and responsibilities they would have to handle in the field. They will be able to upgrade their skills and work with skilled professionals who guide them in using advanced technology and modernise them on the latest industry trends, which increases their confidence and ensures they enter into their careers successfully.
+        </p>
+      </div>
+    </div>
+    <div style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+      <h3 style="text-align: center;font-weight: 900;font-size:18px;" class="pt-3">1. Web Development</h3>
+
+      <div class="row row-cols-1 row-cols-md-3 g-4 p-4">
+        <!-- Front End Development -->
+        <div class="col mt-3">
+          <div class="coursecard p-2">
+            <div class="coursecard-content">
+              <div class="coursecard-header">
+                <a href="#">
+                  <img src="images/course/FrontEndDevelopmentCourseFeatherAcademy.webp" alt="FrontEndDevelopmentCourseFeatherAcademy" title="FrontEndDevelopmentCourseFeatherAcademy" width="100%">
+                </a>
+                <a href="#">
+                  <h4 class="courses-head-animation course-color-change mt-4">
+                    Front End Development
+                  </h4>
+                </a>
+                <a href="#" class="anger-link">
+                  <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li> JavaScript</li>
+                    <li>Bootstrap</li>
+                  </ul>
+                </a>
+              </div>
+              <div class="coursecard-footer d-flex justify-content-between p-3 coursecard-footer-btn-group">
+                <div class="d-flex align-items-center coursecard-footer-hrs">
+                  <p><i class="fa-regular fa-clock"></i> 95 hrs</p>
+                </div>
+                <div class="commonbtn d-flex justify-content-end coursecard-footer-btn">
+                  <a href="#enrollform"><button type="button" value="">Enroll Now</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PHP Full Stack Development -->
+        <div class="col mt-3">
+          <div class="coursecard p-2">
+            <div class="coursecard-content">
+              <div class="coursecard-header">
+                <a href="#">
+                  <img src="images/course/phpfullstackdevelopmentcoursefeatheracademy.webp" alt="phpfullstackdevelopmentcoursefeatheracademy" title="phpfullstackdevelopmentcoursefeatheracademy" width="100%">
+                </a>
+                <a href="#">
+                  <h4 class="courses-head-animation course-color-change mt-4">
+                    PHP Full Stack Development
+                  </h4>
+                </a>
+                <a href="#" class="anger-link">
+                  <ul>
+                    <li>Front End Development</li>
+                    <li>PHP</li>
+                    <li>Laravel</li>
+                    <li>MySQL</li>
+                  </ul>
+                </a>
+              </div>
+              <div class="coursecard-footer d-flex justify-content-between p-3 coursecard-footer-btn-group">
+                <div class="d-flex align-items-center coursecard-footer-hrs">
+                  <p><i class="fa-regular fa-clock"></i> 140 hrs</p>
+                </div>
+                <div class="commonbtn d-flex justify-content-end coursecard-footer-btn">
+                  <a href="#enrollform"><button type="button" value="">Enroll Now</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- MERN Stack Development -->
+        <div class="col mt-3">
+          <div class="coursecard p-2">
+            <div class="coursecard-content">
+              <div class="coursecard-header">
+                <a href="#">
+                  <img src="images/course/MERMstackdevelopmentcoursefeatheracademy.webp" alt="MERNstackdevelopmentcoursefeatheracademy" title="MERNstackdevelopmentcoursefeatheracademy" width="100%">
+                </a>
+                <a href="#">
+                  <h4 class="courses-head-animation course-color-change mt-4">MERN Stack Development</h4>
+                </a>
+                <a href="#" class="anger-link">
+                  <ul>
+                    <li>Front End Development</li>
+                    <li>React JS</li>
+                    <li>Node.js</li>
+                    <li>Express JS</li>
+                    <li>MongoDB</li>
+                  </ul>
+                </a>
+              </div>
+              <div class="coursecard-footer d-flex justify-content-between p-3 coursecard-footer-btn-group">
+                <div class="d-flex align-items-center coursecard-footer-hrs">
+                  <p><i class="fa-regular fa-clock"></i> 110 hrs</p>
+                </div>
+                <div class="commonbtn d-flex justify-content-end coursecard-footer-btn">
+                  <a href="#enrollform"><button type="button" value="">Enroll Now</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Python Full Stack Development -->
+        <div class="col mt-3 ">
+          <div class="coursecard p-2">
+            <div class="coursecard-content">
+              <div class="coursecard-header">
+                <a href="#">
+                    <img src="images/course/pythonfullstackdevelopmentcourse.webp" alt="pythonfullstackdevelopmentcourse" title="pythonfullstackdevelopmentcourse" width="100%">
+                </a>
+                <a href="#">
+                    <h4 class="courses-head-animation course-color-change mt-4">
+                      Python Full Stack Development
+                    </h4>
+                </a>
+                <a href="#" class="anger-link">
+                  <ul>
+                    <li>Front End Development</li>
+                    <li>Python</li>
+                    <li>Django</li>
+                    <li>MySQL</li>
+                  </ul>
+                </a>
+              </div>              
+              <div class="coursecard-footer d-flex justify-content-between p-3 coursecard-footer-btn-group">
+                <div class="d-flex align-items-center coursecard-footer-hrs">
+                  <p><i class="fa-regular fa-clock"></i> 140 hrs</p>
+                </div>
+                <div class="commonbtn d-flex justify-content-end coursecard-footer-btn">
+                  <a href="#enrollform">
+                    <button type="button" value="">Enroll Now</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Java Full Stack Development -->
+        <div class="col mt-3">
+          <div class="coursecard p-2">
+            <div class="coursecard-content">
+              <div class="coursecard-header">
+                <a href="#">
+                    <img src="images/course/java programming.webp" alt="javafullstackdevelopmentcourse" title="javafullstackdevelopmentcourse" width="100%">
+                </a>
+                <a href="#">
+                    <h4 class="courses-head-animation course-color-change mt-4">
+                      Java Full Stack Development
+                    </h4>
+                </a>
+                <a href="#" class="anger-link">
+                  <ul>
+                    <li>Front End Development</li>
+                    <li>Java</li>
+                    <li>Spring Boot</li>
+                    <li>MySQL</li>
+                  </ul>
+                </a>
+              </div>
+              <div class="coursecard-footer d-flex justify-content-between p-3 coursecard-footer-btn-group">
+                <div class="d-flex align-items-center coursecard-footer-hrs">
+                  <p><i class="fa-regular fa-clock"></i> 120 hrs</p>
+                </div>
+                <div class="commonbtn d-flex justify-content-end coursecard-footer-btn">
+                  <a href="#enrollform">
+                    <button type="button" value="">Enroll Now</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <br>
+
+    <div class="row">
+      <!-- Graphics Design -->
+      <div class="col-lg-4 col-md-6 col-sm-6 mt-4">
+        <div class="coursecard p-2">
+          <div class="coursecard-content">
+            <div class="coursecard-header">
+              <a href="#">
+                <img src="images/course/graphicdesigningcoursefeatheracademy.webp" alt="graphicdesigningcoursefeatheracademy" title="graphicdesigningcoursefeatheracademy" width="100%">
+              </a>
+              <a href="#">
+                <h4 class="courses-head-animation course-color-change mt-4">2. Graphic Design</h4>
+              </a>
+              <a href="#" class="anger-link">
+                <ul>
+                  <li>Adobe Photoshop</li>
+                  <li>Adobe Illustrator</li>
+                  <li>Adobe InDesign</li>
+                  <li>CorelDRAW</li>
+                  <li>Corel Vector</li>
+                </ul>
+              </a>
+            </div>
+            <div class="coursecard-footer d-flex justify-content-between p-3">
+              <div class="d-flex align-items-center">
+                <p><i class="fa-regular fa-clock"></i> 70 hrs</p>
+              </div>
+              <div class="commonbtn d-flex justify-content-end">
+                <a href="#enrollform"><button type="button" value="">Enroll Now</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- UI/UX Design -->
+      <div class="col-lg-4 col-md-6 col-sm-6 mt-4">
+        <div class="coursecard p-2">
+          <div class="coursecard-content">
+            <div class="coursecard-header">
+              <a href="#">
+                <img src="images/course/uiuxcoursefeatheracademy.webp" alt="uiuxcoursefeatheracademy" title="uiuxcoursefeatheracademy" width="100%">
+              </a>
+              <a href="#">
+                <h4 class="courses-head-animation course-color-change mt-4">3. UI/UX Design</h4>
+              </a>
+              <a href="#" class="anger-link">
+                <ul>
+                  <li>UI Design</li>
+                  <li>UI Development</li>
+                  <li>UX Design &amp; Researcher</li>
+                  <li>Visual Design for UI</li>
+                  <li>Mobile UX/UI Design</li>
+                </ul>
+              </a>
+            </div>
+            <div class="coursecard-footer d-flex justify-content-between p-3">
+              <div class="d-flex align-items-center">
+                <p><i class="fa-regular fa-clock"></i> 90 hrs</p>
+              </div>
+              <div class="commonbtn d-flex justify-content-end">
+                <a href="#enrollform"><button type="button" value="">Enroll Now</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Data Science -->
+      <div class="col-lg-4 col-md-6 col-sm-6 mt-4">
+        <div class="coursecard p-2">
+          <div class="coursecard-content">
+            <div class="coursecard-header">
+              <a href="#">
+                <img src="images/course/datasciencecoursefeatheracademy.webp" alt="datasciencecoursefeatheracademy" title="datasciencecoursefeatheracademy" width="100%">
+              </a>
+              <a href="#">
+                <h4 class="courses-head-animation course-color-change mt-4">4. Data Science</h4>
+              </a>
+              <a href="#" class="anger-link">
+                <ul>
+                  <li>Data Mining and Knowledge Discovery</li>
+                  <li>Big Data Analytics</li>
+                  <li>Machine Learning</li>
+                  <li>Deep Learning</li>
+                  <li>Natural Language Processing (NLP)</li>
+                  <li>Time Series Analysis</li>
+                </ul>
+              </a>
+            </div>
+            <div class="coursecard-footer d-flex justify-content-between p-3">
+              <div class="d-flex align-items-center">
+                <p><i class="fa-regular fa-clock"></i> 135 hrs</p>
+              </div>
+              <div class="commonbtn d-flex justify-content-end">
+                <a href="#enrollform"><button type="button" value="">Enroll Now</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Digital Marketing -->
+      <div class="col-lg-4 col-md-6 col-sm-6 mt-4">
+        <div class="coursecard p-2">
+          <div class="coursecard-content">
+            <div class="coursecard-header">
+              <a href="#">
+                <img src="images/course/digitalmarketingcoursefeatheracademy.webp" alt="digitalmarketingcoursefeatheracademy" title="digitalmarketingcoursefeatheracademy" width="100%">
+              </a>
+              <a href="#">
+                <h4 class="courses-head-animation course-color-change mt-4">5. Digital Marketing</h4>
+              </a>
+              <a href="#" class="anger-link">
+                <ul>
+                  <li>Google Ads</li>
+                  <li>Social Media Marketing</li>
+                  <li>Search Engine Optimization.</li>
+                </ul>
+              </a>
+            </div>
+            <div class="coursecard-footer d-flex justify-content-between p-3">
+              <div class="d-flex align-items-center">
+                <p><i class="fa-regular fa-clock"></i> 120 hrs</p>
+              </div>
+              <div class="commonbtn d-flex justify-content-end">
+                <a href="#enrollform"><button type="button" value="">Enroll Now</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Video Editing -->
+      <div class="col-lg-4 col-md-6 col-sm-6 mt-4">
+        <div class="coursecard p-2">
+          <div class="coursecard-content">
+            <div class="coursecard-header">
+              <a href="#">
+                <img src="images/course/videoeditingcoursefeatheracademy.webp" alt="videoeditingcoursefeatheracademy" title="videoeditingcoursefeatheracademy" width="100%">
+              </a>
+              <a href="#">
+                <h4 class="courses-head-animation course-color-change mt-4">6. Video Editing</h4>
+              </a>
+              <a href="#" class="anger-link">
+                <ul>
+                  <li>Adobe Premiere Pro</li>
+                  <li>Adobe After Effects</li>
+                  <li>Final Cut Pro</li>
+                  <li>Motion Graphics and Animation Basics</li>
+                </ul>
+              </a>
+            </div>
+            <div class="coursecard-footer d-flex justify-content-between p-3">
+              <div class="d-flex align-items-center">
+                <p><i class="fa-regular fa-clock"></i> 145 hrs</p>
+              </div>
+              <div class="commonbtn d-flex justify-content-end">
+                <a href="#enrollform"><button type="button" value="">Enroll Now</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile App Development -->
+      <div class="col-lg-4 col-md-6 col-sm-6 mt-4">
+        <div class="coursecard p-2">
+          <div class="coursecard-content">
+            <div class="coursecard-header">
+              <a href="#">
+                <img src="images/course/mobileappdevelopmentcoursefeatheracademy.webp" alt="mobileappdevelopmentcoursefeatheracademy" title="mobileappdevelopmentcoursefeatheracademy" width="100%">
+              </a>
+              <a href="#">
+                <h4 class="courses-head-animation course-color-change mt-4">7. Mobile App Development</h4>
+              </a>
+              <a href="#" class="anger-link">
+                <ul>
+                  <li>React Native</li>
+                  <li>Android Studio</li>
+                </ul>
+              </a>
+            </div>
+            <div class="coursecard-footer d-flex justify-content-between p-3">
+              <div class="d-flex align-items-center">
+                <p><i class="fa-regular fa-clock"></i> 120 hrs</p>
+              </div>
+              <div class="commonbtn d-flex justify-content-end">
+                <a href="#enrollform"><button type="button" value="">Enroll Now</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Additional Courses -->
+      <div class="col-lg-4 col-md-6 col-sm-6 mt-4">
+        <div class="coursecard p-2">
+          <div class="coursecard-content">
+            <div class="coursecard-header">
+              <a href="#">
+                <img src="images/course/additionalcoursesinfeatheracademy.webp" alt="additionalcoursesinfeatheracademy" title="additionalcoursesinfeatheracademy" width="100%">
+              </a>
+              <a href="#">
+                <h4 class="courses-head-animation course-color-change mt-4">Additional Courses</h4>
+              </a>
+              <a href="#" class="anger-link">
+                <ul>
+                  <li>MATLAB</li>
+                  <li>TypeScript</li>
+                  <li>NS2/NS3</li>
+                  <li>ANSYS</li>
+                  <li>CATIA</li>
+                  <li>AutoCAD</li>
+                </ul>
+              </a>
+            </div>
+            <div class="coursecard-footer d-flex justify-content-between p-3">
+              <div class="d-flex align-items-center">
+                <p><i class="fa-regular fa-clock"></i> 145 hrs</p>
+              </div>
+              <div class="commonbtn d-flex justify-content-end">
+                <a href="#enrollform"><button type="button" value="">Enroll Now</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ! Enroll Today and Start Your Career Now -->
+<!-- Premium Enroll Section -->
+<div class="container modern-offer-section py-5">
+
+  <div class="text-center mb-5" data-animate>
+    <p class="modern-subtitle">Learn More About Our Courses</p>
+    <h2 class="modern-title">Enroll Today and Start Your Career Now</h2>
+  </div>
+
+  <div class="row g-4">
+
+    <!-- CARD ITEM -->
+    <div class="col-lg-4 col-md-6" data-animate>
+      <div class="modern-card">
+        <div class="icon-wrap">
+          <img src="images/course/experiencedfacultiesicon.webp" width="55">
+        </div>
+        <h3>Experienced Faculties</h3>
+        <p>Our experts have extensive experience in software development, IT management, and innovative technologies. They stay updated with the latest trends, equipping participants with current knowledge.</p>
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6" data-animate>
+      <div class="modern-card">
+        <div class="icon-wrap">
+          <img src="images/course/Self-Analysisicon.webp" width="55">
+        </div>
+        <h3>Self-Analysis & Peer-Learning</h3>
+        <p>We allow students to analyse their learning progress and collaborate with peers through group discussions. This helps them identify improvement areas and form a better understanding of topics.</p>
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6" data-animate>
+      <div class="modern-card">
+        <div class="icon-wrap">
+          <img src="images/course/focussedpreparationicon.webp" width="55">
+        </div>
+        <h3>Focussed Preparation</h3>
+        <p>Our experts help students concentrate more intensely on the subject and gain a deeper understanding of essential concepts. It also improves knowledge retention and increases their confidence.</p>
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6" data-animate>
+      <div class="modern-card">
+        <div class="icon-wrap">
+          <img src="images/course/disciplinedapproachicon.webp" width="55">
+        </div>
+        <h3>Disciplined Approach</h3>
+        <p>We guide students through a systematic way of learning and manage their time effectively. This creates consistent progress and lets them achieve their learning goals effectively.</p>
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6" data-animate>
+      <div class="modern-card">
+        <div class="icon-wrap">
+          <img src="images/course/DedicatedDoubtSessionsicon.webp" width="55">
+        </div>
+        <h3>Dedicated Doubt Sessions</h3>
+        <p>We provide a personalised learning experience and encourage students to ask questions. Through this type of active learning, they identify gaps in their knowledge and prioritise filling them.</p>
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6" data-animate>
+      <div class="modern-card">
+        <div class="icon-wrap">
+          <img src="images/course/CareerGrowthicon.webp" width="55">
+        </div>
+        <h3>Career Growth</h3>
+        <p>Our professionals impart advanced skills and knowledge to students, improving their confidence and preparing them for long-term career growth and leadership opportunities within the tech industry.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  <!-- ! Our Academic Partners -->
+  <div class="container p-4 mt-5 academic-partners-wrapper">
+    <div class="coursehead">
+      <h2 class="text-center pb-4">Our Academic Partners</h2>
+    </div>
+
+    <div class="academic-partners-slider">
+      <!-- Udaya School Of Engineering -->
+      <div class="partner">
+        <a href="http://udayaschoolofengineering.com/#" target="_blank" rel="noopener noreferrer">
+          <div class="d-flex justify-content-center">
+            <img src="images/course/udayacollegelogo.webp" alt="Udaya School Of Engineering" title="Udaya School Of Engineering" style="width:60%;">
+          </div>
+          <p class="text-center"><small>Udaya School Of Engineering</small></p>
+        </a>
+      </div>
+
+      <!-- Ponjesly College of Engineering -->
+      <div class="partner">
+        <a href="https://www.ponjesly.ac.in/" target="_blank" rel="noopener noreferrer">
+          <div class="d-flex justify-content-center">
+            <img src="images/course/ponjeslycolegelogo.webp" alt="Ponjesly College of Engineering" title="Ponjesly College of Engineering" style="width:60%;">
+          </div>
+          <p class="text-center"><small>Ponjesly College of Engineering</small></p>
+        </a>
+      </div>
+
+      <!-- Cape Institute of Technology -->
+      <div class="partner">
+        <a href="https://capeitech.org/" target="_blank" rel="noopener noreferrer">
+          <div class="d-flex justify-content-center">
+            <img src="images/course/Cape.webp" alt="Cape Institute of Technology" title="Cape Institute of Technology" style="width:60%;">
+          </div>
+          <p class="text-center"><small>Cape Institute of Technology</small></p>
+        </a>
+      </div>
+
+      <!-- PSN Institute of Technology and Science -->
+      <div class="partner">
+        <a href="https://www.psnits.ac.in/" target="_blank" rel="noopener noreferrer">
+          <div class="d-flex justify-content-center">
+            <img src="images/course/psn.webp" alt="PSN Institute of Technology and Science" title="PSN Institute of Technology and Science" style="width:60%;">
+          </div>
+          <p class="text-center"><small>PSN Institute of Technology and Science</small></p>
+        </a>
+      </div>
+
+      <!-- Scott Christian College -->
+      <div class="partner">
+        <a href="https://scott.ac.in/" target="_blank" rel="noopener noreferrer">
+          <div class="d-flex justify-content-center">
+            <img src="images/course/Scott.webp" alt="Scott Christian College" title="Scott Christian College" style="width:60%;">
+          </div>
+          <p class="text-center"><small>Scott Christian College (Autonomous)</small></p>
+        </a>
+      </div>
+
+      <!-- St. Johns College of Arts and Science -->
+      <div class="partner">
+        <a href="https://www.stjohnskk.ac.in/" target="_blank" rel="noopener noreferrer">
+          <div class="d-flex justify-content-center">
+            <img src="images/course/jhons.webp" alt="St. Johns College" title="St. Johns College" style="width:57%;">
+          </div>
+          <p class="text-center"><small>St. Johns College of Arts and Science</small></p>
+        </a>
+      </div>
+
+      <!-- St. Xavier’s College -->
+      <div class="partner">
+        <a href="http://stxavierstn.edu.in/" target="_blank" rel="noopener noreferrer">
+          <div class="d-flex justify-content-center">
+            <img src="images/course/Xavier.webp" alt="St. Xavier's College" title="St. Xavier's College" style="width:80%;">
+          </div>
+          <p class="text-center"><small>St. Xavier’s College (Autonomous)</small></p>
+        </a>
+      </div>
+
+      <!-- DMI Engineering College -->
+      <div class="partner">
+        <a href="https://dmiengg.edu.in/" target="_blank" rel="noopener noreferrer">
+          <div class="d-flex justify-content-center">
+            <img src="images/course/DMI.webp" alt="DMI Engineering College" title="DMI Engineering College" style="width:60%;">
+          </div>
+          <p class="text-center"><small>DMI Engineering College</small></p>
+        </a>
+      </div>
+
+      <!-- Noorul Islam Centre for Higher Education -->
+      <div class="partner">
+        <a href="https://www.niuniv.com/" target="_blank" rel="noopener noreferrer">
+          <div class="d-flex justify-content-center">
+            <img src="images/course/NICHE.webp" alt="Noorul Islam Centre for Higher Education" title="Noorul Islam Centre for Higher Education" style="width:65%;">
+          </div>
+          <p class="text-center"><small>Noorul Islam Centre for Higher Education</small></p>
+        </a>
+      </div>
+
+      <!-- Holy Cross College -->
+      <div class="partner">
+        <a href="https://holycrossngl.edu.in/" target="_blank" rel="noopener noreferrer">
+          <div class="d-flex justify-content-center">
+            <img src="images/course/HOLY-CROSS.webp" alt="Holy Cross College" title="Holy Cross College" style="width:65%;">
+          </div>
+          <p class="text-center"><small>Holy Cross College (Autonomous)</small></p>
+        </a>
+      </div>
+
+      <!-- Bethlahem Institute of Engineering -->
+      <div class="partner">
+        <a href="https://www.bethlahem.org/" target="_blank" rel="noopener noreferrer">
+          <div class="d-flex justify-content-center">
+            <img src="images/course/Bethlahem.webp" alt="Bethlahem Institute of Engineering" title="Bethlahem Institute of Engineering" style="width:65%;">
+          </div>
+          <p class="text-center"><small>Bethlahem Institute of Engineering</small></p>
+        </a>
+      </div>
+
+      <!-- Stella Mary’s College of Engineering -->
+      <div class="partner">
+        <a href="https://stellamaryscoe.edu.in/" target="_blank" rel="noopener noreferrer">
+          <div class="d-flex justify-content-center">
+            <img src="images/course/Stella-Marys.webp" alt="Stella Mary's College" title="Stella Mary's College" style="width:65%;">
+          </div>
+          <p class="text-center"><small>Stella Mary’s College of Engineering (Autonomous)</small></p>
+        </a>
+      </div>
+
+      <!-- Infant Jesus College of Arts and Science for Women -->
+      <div class="partner">
+        <a href="https://ijcasw.edu.in/" target="_blank" rel="noopener noreferrer">
+          <div class="d-flex justify-content-center">
+            <img src="images/course/infant-jesus.webp" alt="Infant Jesus College" title="Infant Jesus College" style="width:63%;">
+          </div>
+          <p class="text-center"><small>Infant Jesus College of Arts and Science for Women</small></p>
+        </a>
+      </div>
+
+      <!-- Noorul Islam College of Arts and Science -->
+      <div class="partner">
+        <a href="http://nicollege.com/" target="_blank" rel="noopener noreferrer">
+          <div class="d-flex justify-content-center">
+            <img src="images/course/Noorul-Islam.webp" alt="Noorul Islam College" title="Noorul Islam College" style="width:60%;">
+          </div>
+          <p class="text-center"><small>Noorul Islam College of Arts and Science</small></p>
+        </a>
+      </div>
+
+      <!-- Sree Ayyappa College for Women -->
+      <div class="partner">
+        <a href="https://sreeayyappacollege.com/" target="_blank" rel="noopener noreferrer">
+          <div class="d-flex justify-content-center">
+            <img src="images/course/sree-iyappa.webp" alt="Sree Ayyappa College for Women" title="Sree Ayyappa College for Women" style="width:60%;">
+          </div>
+          <p class="text-center"><small>Sree Ayyappa College for Women</small></p>
+        </a>
+      </div>
+
+      <!-- Sun College of Engineering & Technology -->
+      <div class="partner">
+        <a href="https://www.sunengineeringcollege.com/" target="_blank" rel="noopener noreferrer">
+          <div class="d-flex justify-content-center">
+            <img src="images/course/SUN.webp" alt="Sun College of Engineering & Technology" title="Sun College of Engineering & Technology" style="width:55%;">
+          </div>
+          <p class="text-center"><small>Sun College of Engineering &amp; Technology</small></p>
+        </a>
+      </div>
+
+      <!-- Lord Jegannath College -->
+      <div class="partner">
+        <a href="https://www.ljcet.org/" target="_blank" rel="noopener noreferrer">
+          <div class="d-flex justify-content-center">
+            <img src="images/course/lord-jeganath.webp" alt="Lord Jegannath College" title="Lord Jegannath College" style="width:60%;">
+          </div>
+          <p class="text-center"><small>Lord Jegannath College of Engineering &amp; Technology</small></p>
+        </a>
+      </div>
+
+      <!-- Marthandam College of Engineering & Technology (MACET) -->
+      <div class="partner">
+        <a href="https://www.macet.edu.in/" target="_blank" rel="noopener noreferrer">
+          <div class="d-flex justify-content-center">
+            <img src="images/course/MACET.webp" alt="Marthandam College of Engineering & Technology" title="Marthandam College of Engineering & Technology" style="width:65%;">
+          </div>
+          <p class="text-center"><small>Marthandam College of Engineering &amp; Technology</small></p>
+        </a>
+      </div>
+
+      <!-- (Optional - originally commented in your HTML) Annai Velankanni (AVCE) -->
+      <!-- <div class="partner">
+        <a href="https://avce.edu.in/" target="_blank" rel="noopener noreferrer">
+          <div class="d-flex justify-content-center">
+            <img src="images/course/Annai-Velankanni.webp" alt="Annai Velankanni College" title="Annai Velankanni College" style="width:65%;">
+          </div>
+          <p class="text-center"><small>Annai Velankanni College of Engineering (AVCE)</small></p>
+        </a>
+      </div> -->
+
+      <!-- (Optional - commented) WCC Nagercoil -->
+      <!-- <div class="partner">
+        <a href="https://wccnagercoil.edu.in/" target="_blank" rel="noopener noreferrer">
+          <div class="d-flex justify-content-center">
+            <img src="images/course/WCC.webp" alt="WCC Nagercoil" title="WCC Nagercoil" style="width:65%;">
+          </div>
+          <p class="text-center"><small>WCC Nagercoil</small></p>
+        </a>
+      </div> -->
+
+    </div> <!-- /.academic-partners-slider -->
+  </div>
+
+  <!-- ! FAQs -->
+  <div class="container  mt-3">
+    <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active text-dark" id="course-tab" data-bs-toggle="tab" data-bs-target="#course-tab-pane" type="button" role="tab" aria-controls="course-tab-pane" aria-selected="true">
+          <div class="">
+            <h4 class="text-center fw-bold">Course FAQs</h4>
+          </div>
+        </button>
+      </li>
+      <li class="nav-item " role="presentation">
+        <button class="nav-link text-dark" id="internship-tab" data-bs-toggle="tab" data-bs-target="#internship-tab-pane" type="button" role="tab" aria-controls="internship-tab-pane" aria-selected="false" tabindex="-1">
+          <div class="">
+            <h4 class="text-center fw-bold">Internships &amp; Project FAQs</h4>
+          </div>
+        </button>
+      </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade show active" id="course-tab-pane" role="tabpanel" aria-labelledby="course-tab" tabindex="0">
+        <div class="container mt-4">
+
+          <div class="faq">
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button accordion-button-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    What makes this software course innovative?
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Our courses offer hands-on projects, real-world applications, and industry-relevant skills. With a focus on innovation and certification upon completion, they prepare you to stand out in today's job market.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button accordion-button-1 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Will the learners work on projects that reflect current industry practices?
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Absolutely! Our courses include projects that mirror current industry practices, ensuring you gain practical, job-ready skills that align with today’s professional standards.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button accordion-button-1 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    How does this course prepare the learners for future tech trends?
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    This course equips the learners with adaptable skills and a strong foundation in emerging technologies, ensuring you're prepared to stay ahead as tech trends evolve.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button accordion-button-1 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    Are the courses suitable for beginners?
+                  </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Yes, the courses are designed for learners of all levels, including beginners. We start with foundational concepts and gradually progress to more advanced topics.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button accordion-button-1 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    Does the course offer flexible scheduling for individuals with busy personal commitments?
+                  </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    While we offer fixed schedule slots, we also provide flexible learning options to accommodate those with busy personal schedules, making it easier to balance learning with other commitments.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button accordion-button-1 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                    Are there any certifications included in this course?
+                  </button>
+                </h2>
+                <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Yes, upon successful completion of both the course and the included projects, you will receive a certification that validates your skills and practical experience.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button accordion-button-1 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                    What kind of support is available for coursework?
+                  </button>
+                </h2>
+                <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    We offer dedicated support through experienced instructors, interactive sessions, and timely feedback to ensure your success in the coursework.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button accordion-button-1 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                    Are there any discounts or offers available for the courses?
+                  </button>
+                </h2>
+                <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    We occasionally offer promotional discounts or packages. Please check the course page or contact us for current offers.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button accordion-button-1 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                    How often is the curriculum updated?
+                  </button>
+                </h2>
+                <div id="collapseNine" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    The curriculum is regularly updated to reflect the latest industry trends, technologies, and best practices, ensuring that you gain relevant and up-to-date knowledge.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button accordion-button-1 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                    Is there any support for placement after course completion?
+                  </button>
+                </h2>
+                <div id="collapseTen" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Yes, we provide placement support by connecting you with industry networks, offering career guidance, and assisting with interview preparation to help learners secure job opportunities after course completion.
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="tab-pane fade" id="internship-tab-pane" role="tabpanel" aria-labelledby="internship-tab" tabindex="0">
+        <div class="container mt-4">
+
+          <div class="faq">
+            <div class="accordion" id="accordionExamples">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button accordion-button-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOnes" aria-expanded="true" aria-controls="collapseOne">
+                    Do you offer internships in your organization?
+                  </button>
+                </h2>
+                <div id="collapseOnes" class="accordion-collapse collapse show" data-bs-parent="#accordionExamples">
+                  <div class="accordion-body">
+                    Yes, we offer internships to provide hands-on experience and exposure to real-world industry practices.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button accordion-button-1 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwos" aria-expanded="false" aria-controls="collapseTwo">
+                    What kind of final-year project assistance do you provide?
+                  </button>
+                </h2>
+                <div id="collapseTwos" class="accordion-collapse collapse" data-bs-parent="#accordionExamples">
+                  <div class="accordion-body">
+                    We provide comprehensive guidance for your final-year project, including project selection, mentoring, technical support, and help with documentation to ensure its successful completion.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button accordion-button-1 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThrees" aria-expanded="false" aria-controls="collapseThree">
+                    Can the learners work on a live project during their internship?
+                  </button>
+                </h2>
+                <div id="collapseThrees" class="accordion-collapse collapse" data-bs-parent="#accordionExamples">
+                  <div class="accordion-body">
+                    Yes, during the learners’ internship, they can work on live projects, allowing them to apply their learning to solve real-world challenges faced by businesses.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button accordion-button-1 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFours" aria-expanded="false" aria-controls="collapseFour">
+                    Will a certificate be provided for the internship or final-year project?
+                  </button>
+                </h2>
+                <div id="collapseFours" class="accordion-collapse collapse" data-bs-parent="#accordionExamples">
+                  <div class="accordion-body">
+                    Yes, the learners will receive a certification upon successful completion of their internship and final-year project, validating their practical experience.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button accordion-button-1 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFives" aria-expanded="false" aria-controls="collapseFive">
+                    What is the duration of the internship or final-year project?
+                  </button>
+                </h2>
+                <div id="collapseFives" class="accordion-collapse collapse" data-bs-parent="#accordionExamples">
+                  <div class="accordion-body">
+                    The internship and final-year project vary depending on the specific program and requirements.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button accordion-button-1 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSixs" aria-expanded="false" aria-controls="collapseSix">
+                    What are the benefits of doing an internship or final-year project with your organization?
+                  </button>
+                </h2>
+                <div id="collapseSixs" class="accordion-collapse collapse" data-bs-parent="#accordionExamples">
+                  <div class="accordion-body">
+                    Interning or completing the final-year project with us provides hands-on experience, exposure to industry practices, and an opportunity to work on live projects that enhance the learners’ employability.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button accordion-button-1 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSevens" aria-expanded="false" aria-controls="collapseSeven">
+                    Can the learners switch the internship or project domains halfway through?
+                  </button>
+                </h2>
+                <div id="collapseSevens" class="accordion-collapse collapse" data-bs-parent="#accordionExamples">
+                  <div class="accordion-body">
+                    While we encourage commitment to the internship or project domains the learners are assigned to, if there are valid reasons, we may consider switching opportunities. The learners should discuss with their mentor for guidance.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button accordion-button-1 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEights" aria-expanded="false" aria-controls="collapseEight">
+                    How is the learner’s performance evaluated during the internship or final-year project?
+                  </button>
+                </h2>
+                <div id="collapseEights" class="accordion-collapse collapse" data-bs-parent="#accordionExamples">
+                  <div class="accordion-body">
+                    The learner’s performance is evaluated based on project completion, quality of work, initiative, and feedback from the mentor or company. Regular check-ins and progress reviews will also help track your development.
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+    <footer class="text-center text-lg-start text-white">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <!-- Left -->
+            <div class="me-5 d-none d-lg-block">
+                <span>Get connected with us on social networks:</span>
+            </div>
+            <!-- Left -->
+
+            <!-- Right -->
+            <div>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-google"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+
+        <!-- Section: Links  -->
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-3 col-xl-2 mx-auto mb-4">
+                        <!-- Content -->
+                        <img src="images/logo-foot.webp" class="img-fluid">
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Services
+                        </h6>
+                        <p>
+                            <a href="neet.html" class="text-reset">NEET</a>
+                        </p>
+                        <p>
+                            <a href="jee.html" class="text-reset">JEE</a>
+                        </p>
+                        <p>
+                            <a href="course.html" class="text-reset">IT Courses</a>
+                        </p>
+                        <p>
+                            <a href="hr-solution.html" class="text-reset">HR Solutions</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Useful links
+                        </h6>
+                        <p>
+                            <a href="index.html" class="text-reset">Home</a>
+                        </p>
+                        <p>
+                            <a href="about.html" class="text-reset">About</a>
+                        </p>
+                        <p>
+                            <a href="contact.html" class="text-reset">Contact</a>
+                        </p>
+                        <p>
+                            <a href="#" class="text-reset">Help</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-5 col-lg-4 col-xl-4 mb-md-0 mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                        <p><i class="fas fa-home me-3"></i> No.36, 1st Floor, Thasor Beniel Building, Veppamoodu,
+                            Opposite to kamarajar statue, Chidambara Nagar, Nagercoil, 629001</p>
+                        <p>
+                            <i class="fas fa-envelope me-3"></i>
+                            education@featheracademy.com
+                        </p>
+                        <p><i class="fas fa-phone me-3"></i> +91 9944688648</p>
+                        <p><i class="fas fa-print me-3"></i> +91 7550110016</p>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
+
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            Copyright © 2025 All Rights Reserved.
+            <a class="text-reset fw-bold" href="https://feathersoftwares.com/">Feather Softwares</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+  <script>
+    (function () {
+      document.addEventListener('DOMContentLoaded', function () {
+        var $slider = $('.academic-partners-slider');
+
+        if ($slider.hasClass('slick-initialized')) {
+          $slider.slick('unslick');
+        }
+
+        // initialize slick
+        $slider.slick({
+          dots: false,
+          infinite: true,
+          speed: 500,
+          slidesToShow: 5,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 2000,
+          arrows: true,
+          prevArrow: '<button type="button" class="slick-prev" aria-label="Previous slide"><span class="sr-only">Previous</span></button>',
+          nextArrow: '<button type="button" class="slick-next" aria-label="Next slide"><span class="sr-only">Next</span></button>',
+          responsive: [
+            { breakpoint: 1400, settings: { slidesToShow: 5 } },
+            { breakpoint: 1200, settings: { slidesToShow: 4 } },
+            { breakpoint: 992,  settings: { slidesToShow: 3 } },
+            { breakpoint: 768,  settings: { slidesToShow: 2 } },
+            { breakpoint: 480,  settings: { slidesToShow: 1 } }
+          ]
+        });
+      });
+    })();
+  </script>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
