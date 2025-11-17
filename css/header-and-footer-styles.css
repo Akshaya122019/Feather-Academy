@@ -23,7 +23,7 @@
  }
 
  .navbar-brand img {
-   height: 40px;
+   height: 60px;
    width: auto;
  }
 /* Banner */
@@ -48,4 +48,9 @@
  /* Footer */
  footer {
    background: linear-gradient(135deg, #044046 0%, #05666e 100%);
+ }
+ @media (max-width: 768px) {
+   .foot-logo {
+     padding: 15%;
+   }
  }
